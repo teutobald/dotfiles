@@ -1,0 +1,132 @@
+[KFileDialog Settings]
+
+detailViewIconSize=16
+iconViewIconSize=123
+
+[KPropertiesDialog]
+DP-4 Height 2560x1440=486
+DP-4 Width 2560x1440=464
+
+[PlasmaRunnerManager]
+
+
+[PlasmaViews][Panel 1]
+alignment=132
+panelVisibility=0
+
+[PlasmaViews][Panel 1][Defaults]
+maxLength=2560
+minLength=2560
+offset=0
+thickness=32
+
+[PlasmaViews][Panel 1][Horizontal1024]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1152]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1200]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1280]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1366]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1440]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1600]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1680]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1900]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1916]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal1920]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal2048]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal2560]
+maxLength=2560
+minLength=2560
+offset=0
+thickness=32
+
+[PlasmaViews][Panel 1][Horizontal3440]
+maxLength=3440
+minLength=3440
+thickness=36
+
+[PlasmaViews][Panel 1][Horizontal640]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal800]
+thickness=45
+
+[PlasmaViews][Panel 1][Horizontal864]
+thickness=45
+
+[PlasmaViews][Panel 37]
+alignment=132
+panelVisibility=2
+
+[PlasmaViews][Panel 37][Defaults]
+maxLength=2546
+minLength=292
+offset=0
+thickness=40
+
+[PlasmaViews][Panel 37][Horizontal2560]
+maxLength=2546
+minLength=292
+offset=0
+thickness=40
+
+[PlasmaViews][Panel 53]
+alignment=132
+panelVisibility=0
+
+[PlasmaViews][Panel 53][Defaults]
+maxLength=2262
+minLength=2262
+offset=0
+thickness=30
+
+[PlasmaViews][Panel 53][Horizontal2560]
+thickness=30
+
+[PlasmaViews][Panel 53][Horizontal3440]
+maxLength=2262
+minLength=2262
+offset=0
+
+[PlasmaViews][Panel 78]
+alignment=132
+
+[PlasmaViews][Panel 78][Defaults]
+maxLength=3440
+minLength=3440
+thickness=30
+
+[PlasmaViews][Panel 78][Horizontal3440]
+maxLength=3440
+minLength=3440
+thickness=30
+
+[ScreenConnectors]
+0=DP-4
+1=:0.0
+2=HDMI-0
+
+[Updates]
+

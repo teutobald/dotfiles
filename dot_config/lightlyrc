@@ -1,0 +1,14 @@
+[Common]
+CornerRadius=1
+OutlineCloseButton=false
+ShadowSize=ShadowMedium
+
+[Style]
+DolphinSidebarOpacity=100
+TransparentDolphinView=false
+UnifiedTabBarKonsole=true
+ViewDrawFocusIndicator=false
+
+[Windeco]
+ButtonSize=ButtonSmall
+DrawBackgroundGradient=false

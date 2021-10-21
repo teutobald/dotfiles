@@ -1,0 +1,136 @@
+* Mudeer - KDE Plasma Tiling Manager for Ultrawide and Super Ultrawide monitors
+
+** Features
+- Split monitor by width into quarters or thirds and height by halves
+- Configurable width increase for the middle window when split by thirds
+- Configurable gap between windows
+- Half Fullscreen window option. Use monitor as dual screen by playing videos/games on half the screen
+- Soft tiling, allows for tiling and floating windows
+
+** Examples
+*** Tiling Examples
+    #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+    [[https://github.com/darkstego/Mudeer/blob/media/mudeer.gif]]
+*** Quickly Organize Windows
+    #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+    [[https://github.com/darkstego/Mudeer/blob/media/organize.gif]]
+*** Mimic Dual Screen by Tiling Fullscreen to occupy half the monitor
+    #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+    [[https://github.com/darkstego/Mudeer/blob/media/fs.gif]]
+
+** Installation
+
+*** KDE Store (Through Systemsettings)
+NOTE: Systemsettings downloader can be finicky at time.  
+    
+Under SystemSettings -> Kwin Scripts, you can search for and install Mudeer.
+
+To get the configuration settings to work you will need to register them manually from the command line as shown below.
+
+     #+BEGIN_EXAMPLE
+    mkdir -p ~/.local/share/kservices5
+    ln -sf ~/.local/share/kwin/scripts/mudeer-ultrawide/metadata.desktop ~/.local/share/kservices5/mudeer-ultrawide.desktop
+   #+END_EXAMPLE
+
+I am unsure if there is a way to register the configuration automatically with the scripts. 
+   
+*** Manual
+     #+BEGIN_EXAMPLE
+    git clone https://github.com/darkstego/Mudeer.git
+    kpackagetool5 -i Mudeer
+    mkdir -p ~/.local/share/kservices5
+    ln -sf ~/.local/share/kwin/scripts/mudeer-ultrawide/metadata.desktop ~/.local/share/kservices5/mudeer-ultrawide.desktop
+   #+END_EXAMPLE
+
+   To update
+   
+   #+BEGIN_SRC bash
+   git clone https://github.com/darkstego/Mudeer.git &&  kpackagetool5 -u Mudeer
+   #+END_SRC
+
+   You will need to disable then enable script from Systemsettings -> Kwin Scripts for update changes to take effect.
+
+   You may need to log out and back into the plasma session for changes to take effect.
+
+** Configuration
+   Configuration is done through KDE's Kwin Script Configuration. Find Mudeer under System Settings -> Kwin Scripts and there will be an options button.
+
+   When changing the options you need to disable then enable the script for the changes to take effect. I think this is a quirk in KDE scripts.
+
+   In the configuration menu you are able to configure the width of middle window in a 3-wide configuration, and the gap between windows.
+
+** Shortcuts
+   The default shortcuts were designed to easily use with the left
+   hand to allow use quickly while using the mouse. As a result, *some of these shortcuts will not be enabled unless they are enabled manually* through the KDE shortcut menu. This happens when some of
+   those shortcuts overwrite others in KDE.
+
+   You can see all the shortcuts for this project by searching the
+   global shortcuts settings menu for "mudeer".
+
+   The Shortcuts all use the Meta (known as Win or Super outside
+   KDE). Below is the explenation of the default bindings.
+*** Thirds
+    Use Meta + A,S,D for left middle and right thirds respectively.
+    
+    Alt modifier for only the bottom half.
+    
+    Ctrl modifier for only the top half.
+
+    Shift modifier increases width to encompass all neighboring
+    thirds. (e.g. Pressing Meta+Shift+A will make the window take up
+    the left and middle thirds). Note: if chosen with middle third
+    (S) then it will consider it as middle-half, since otherwise it
+    would be identical to maximize.
+    
+    Note: Middle third can be made bigger than the others by using the Kwin Configuration.
+    This is useful to give extra space to the middle window in a three wide display.
+
+*** Quarters    
+    Use Meta + Z,X,C,V for left, middle left, middle right, and right Quarters respectively.
+    
+    Alt modifier for only the bottom half.
+    
+    Ctrl modifier for only the top half.
+
+    Shift modifier increases width to encompass all neighboring
+    slots. (e.g. Pressing Meta+Shift+X will make the window take up
+    the left 3/4 of the screen).
+
+*** Fullscreen
+    Use Meta + F to fullscreen the window (ignoring things like taskbars)
+    
+    To Fullscreen on half the screen Use Ctrl and Shift for Left and Right respectively. This is helpful to mimic the behaviour of having two seperate monitors side-by-side.
+
+    Holding the shift key will maximize instead of full screen (not cover the panel) in the side selected. This can be useful when you want to run a fullscreen (movie or game) on half the screen and maximize an application in the remaining part of the screen.  
+    
+*** Summary Table 
+Below is the list of default shortcuts. Again, Meta in KDE is the Win (or Super) key.
+
+| Shortcut             | Default Binding |
+|----------------------+-----------------|
+| Left Third           | Meta+a          |
+| Center Third         | Meta+s          |
+| Right Third          | Meta+d          |
+| Left Two Thirds      | Meta+Shift+a    |
+| Right Two Thirds     | Meta+Shift+d    |
+| Far Left Quarter     | Meta+z          |
+| Center Left Quarter  | Meta+x          |
+| Center Right Quarter | Meta+c          |
+| Far Right Quarter    | Meta+v          |
+| Left Half            | Meta+Shift+z    |
+| Left Three Quarters  | Meta+Shift+x    |
+| Center Half          | Meta+Shift+s    |
+| Right Three Quarters | Meta+Shift+c    |
+| Right Half           | Meta+Shift+v    |
+| Top half modifier    | Ctrl+           |
+| Bottom half modifier | Alt+            |
+
+| Fullscreen            | Meta+f      |
+| Left half fullscreen  | Meta+Ctrl+f |
+| Right half fullscreen | Meta+Alt+f  |
+
+
+** Troubleshooting
+
+*** No configuration menus
+  Make sure the link to ~/.local/share/kservices5/mudeer-ultrawide.desktop is available.

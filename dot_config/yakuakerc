@@ -1,0 +1,25 @@
+[Appearance]
+BackgroundColor=47,52,63
+BackgroundColorOpacity=30
+HideSkinBorders=true
+Skin=arc-dark
+SkinInstalledWithKns=true
+
+[Desktop Entry]
+DefaultProfile=Arc Solid.profile
+
+[Dialogs]
+FirstRun=false
+
+[DownloadDialog Settings]
+HDMI-0 Height 2560x1440=464
+HDMI-0 Width 2560x1440=700
+
+[KFileDialog Settings]
+detailViewIconSize=16
+iconViewIconSize=43
+
+[Window]
+Height=100
+Position=100
+Width=20
